@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>رومز فلاورز — أجمل الورود لأجمل اللحظات</title>
+
+<meta name="description"
+content="رومز فلاورز — ورد، توليب، زنبق، عروسة النيل، باقات مشكلة وتنسيقات أنيقة. بجانب المستشفى في بنها.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Aref+Ruqaa:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+ --cream:#f8f3eb;
+ --paper:#fffdf9;
+ --sage:#68705a;
+ --sage-dark:#4e5545;
+ --sage-soft:#dfe4d6;
+ --blush:#e7c8bd;
+ --rose:#c9978a;
+ --ink:#34362f;
+ --muted:#77786f;
+ --line:#e8e0d5;
+ --shadow:0 18px 50px rgba(55,58,47,.08);
+}
+
+*{
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{
+ margin:0;
+ background:var(--paper);
+ color:var(--ink);
+ font-family:"Cairo",sans-serif;
+}
+
+a{
+ text-decoration:none;
+ color:inherit;
+}
+
+button{
+ font:inherit;
+ cursor:pointer;
+}
+
+.container{
+ width:min(1160px,92%);
+ margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+ background:var(--sage-dark);
+ color:#fff;
+ padding:9px 0;
+ font-size:12px;
+}
+
+.topbar .container{
+ display:flex;
+ justify-content:space-between;
+ gap:15px;
+}
+
+/* NAVBAR */
+
+nav{
+ position:sticky;
+ top:0;
+ z-index:50;
+ background:rgba(255,253,249,.94);
+ backdrop-filter:blur(14px);
+ border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+ height:78px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:25px;
+}
+
+.logo{
+ font:800 34px/1 "Aref Ruqaa",serif;
+ color:var(--sage);
+}
+
+.logo span{
+ display:block;
+ font:700 9px "Cairo";
+ letter-spacing:2px;
+ text-align:center;
+ margin-top:5px;
+ color:var(--muted);
+}
+
+.navlinks{
+ display:flex;
+ align-items:center;
+ gap:28px;
+ font-size:14px;
+ font-weight:600;
+ color:#5e6058;
+}
+
+.navlinks a:hover{
+ color:var(--sage);
+}
+
+.cart-btn,
+.menu-btn{
+ border:1px solid var(--line);
+ background:white;
+ border-radius:50px;
+ padding:10px 17px;
+ color:var(--sage);
+ font-weight:700;
+}
+
+.menu-btn{
+ display:none;
+}
+
+/* BUTTON */
+
+.btn{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ padding:13px 22px;
+ border-radius:999px;
+ border:1px solid var(--sage);
+ font-size:14px;
+ font-weight:700;
+}
+
+.btn.primary{
+ background:var(--sage);
+ color:white;
+}
+
+.btn.secondary{
+ background:white;
+ color:var(--sage);
+}
+
+/* HERO */
+
+.hero{
+ min-height:650px;
+ background:linear-gradient(115deg,#fffdf9,#f3eee5);
+ position:relative;
+ overflow:hidden;
+}
+
+.hero:after{
+ content:"";
+ position:absolute;
+ width:450px;
+ height:450px;
+ border-radius:50%;
+ background:var(--blush);
+ opacity:.24;
+ left:-230px;
+ bottom:-230px;
+}
+
+.hero-grid{
+ min-height:650px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ align-items:center;
+ gap:55px;
+ position:relative;
+ z-index:1;
+}
+
+.kicker{
+ text-transform:uppercase;
+ letter-spacing:1px;
+ font-size:12px;
+ font-weight:800;
+ color:var(--sage);
+}
+
+h1,
+h2,
+h3{
+ font-family:"Aref Ruqaa",serif;
+ font-weight:700;
+}
+
+h1{
+ font-size:66px;
+ line-height:1.15;
+ color:var(--sage);
+ margin:15px 0;
+}
+
+.hero-copy p{
+ max-width:560px;
+ line-height:1.9;
+ color:var(--muted);
+ font-size:16px;
+}
+
+.script{
+ font:32px "Aref Ruqaa",serif;
+ color:#7b806c;
+ margin:22px 0;
+}
+
+.actions{
+ display:flex;
+ gap:12px;
+ flex-wrap:wrap;
+}
+
+.hero-photo{
+ height:500px;
+ border-radius:35% 35% 18% 18%;
+ overflow:hidden;
+ box-shadow:var(--shadow);
+ background:#eee8de;
+}
+
+.hero-photo img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ object-position:center;
+}
+
+/* SECTIONS */
+
+.section{
+ padding:92px 0;
+}
+
+.section.alt{
+ background:var(--cream);
+}
+
+.section-head{
+ text-align:center;
+ max-width:690px;
+ margin:0 auto 42px;
+}
+
+.section-head h2{
+ font-size:44px;
+ line-height:1.3;
+ margin:8px 0;
+ color:var(--sage);
+}
+
+.section-head p{
+ line-height:1.85;
+ color:var(--muted);
+ font-size:14px;
+}
+
+/* FLOWERS */
+
+.flower-grid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:18px;
+}
+
+.product{
+ background:white;
+ border:1px solid var(--line);
+ border-radius:22px;
+ overflow:hidden;
+ box-shadow:0 8px 28px rgba(55,58,47,.04);
+ transition:.25s;
+}
+
+.product:hover{
+ transform:translateY(-5px);
+ box-shadow:var(--shadow);
+}
+
+.product-img{
+ height:190px;
+ background:linear-gradient(135deg,#eee9df,#e3e7dc);
+ display:grid;
+ place-items:center;
+ font-size:70px;
+}
+
+.product-body{
+ padding:19px;
+}
+
+.product-body h3{
+ font-size:24px;
+ margin:0 0 5px;
+ color:var(--sage);
+}
+
+.product-body p{
+ font-size:13px;
+ color:var(--muted);
+ line-height:1.7;
+ min-height:39px;
+ margin:0 0 14px;
+}
+
+.price{
+ font-weight:800;
+ color:var(--sage);
+ font-size:16px;
+}
+
+.price small{
+ font-size:11px;
+ color:#98978e;
+ font-weight:600;
+}
+
+.product-footer{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-top:12px;
+}
+
+.add{
+ border:0;
+ background:var(--sage);
+ color:#fff;
+ border-radius:50px;
+ padding:9px 14px;
+ font-size:12px;
+ font-weight:700;
+}
+
+/* COLLECTIONS */
+
+.collection-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:18px;
+}
+
+.collection{
+ min-height:230px;
+ border-radius:26px;
+ padding:27px;
+ position:relative;
+ overflow:hidden;
+ border:1px solid var(--line);
+}
+
+.collection:nth-child(1){
+ background:#f1e8e2;
+}
+
+.collection:nth-child(2){
+ background:#e9ede4;
+}
+
+.collection:nth-child(3){
+ background:#f3efe5;
+}
+
+.collection:nth-child(4){
+ background:#eee7e0;
+}
+
+.collection:nth-child(5){
+ background:#e9eee7;
+}
+
+.collection:nth-child(6){
+ background:#f3eee5;
+}
+
+.collection h3{
+ font-size:26px;
+ color:var(--sage);
+ margin:0 0 8px;
+}
+
+.collection p{
+ font-size:13px;
+ color:#6f7068;
+ line-height:1.8;
+ max-width:290px;
+}
+
+.collection .emoji{
+ position:absolute;
+ left:18px;
+ bottom:5px;
+ font-size:75px;
+ opacity:.65;
+}
+
+/* READY TO GO */
+
+.ready{
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:50px;
+ align-items:center;
+}
+
+.price-cards{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+}
+
+.price-card{
+ background:white;
+ border:1px solid var(--line);
+ border-radius:20px;
+ padding:22px;
+ text-align:center;
+}
+
+.price-card h3{
+ margin:0;
+ color:var(--sage);
+ font-size:22px;
+}
+
+.price-card strong{
+ display:block;
+ font-size:19px;
+ margin:8px 0;
+ font-family:"Cairo",sans-serif;
+}
+
+.price-card span{
+ font-size:11px;
+ color:var(--muted);
+}
+
+.addons{
+ margin-top:18px;
+ background:#f0ebe2;
+ border-radius:20px;
+ padding:18px;
+ font-size:13px;
+ color:#6c6d64;
+ line-height:1.8;
+}
+
+/* LOCATION */
+
+.location{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
+ align-items:stretch;
+}
+
+.map-card{
+ min-height:350px;
+ border-radius:28px;
+
+ background:
+ linear-gradient(rgba(104,112,90,.10),rgba(104,112,90,.10)),
+ repeating-linear-gradient(
+   45deg,
+   #f1eee6 0 14px,
+   #e8e4da 14px 16px
+ );
+
+ border:1px solid var(--line);
+
+ display:grid;
+ place-items:center;
+ text-align:center;
+ padding:25px;
+}
+
+.map-pin{
+ font-size:48px;
+}
+
+.map-card h3{
+ font-size:28px;
+ color:var(--sage);
+ margin:8px 0;
+}
+
+.info-card{
+ background:var(--sage);
+ color:white;
+ border-radius:28px;
+ padding:35px;
+}
+
+.info-card h2{
+ font-size:36px;
+ margin:0 0 18px;
+}
+
+.info-row{
+ display:flex;
+ gap:14px;
+ padding:17px 0;
+ border-bottom:1px solid rgba(255,255,255,.18);
+ font-size:14px;
+}
+
+.info-row:last-child{
+ border:0;
+}
+
+.info-row b{
+ display:block;
+ margin-bottom:3px;
+}
+
+.info-row span{
+ opacity:.85;
+}
+
+/* ORDER */
+
+.order{
+ background:var(--cream);
+}
+
+.order-grid{
+ display:grid;
+ grid-template-columns:1fr .9fr;
+ gap:40px;
+ align-items:center;
+}
+
+.order-box{
+ background:white;
+ border:1px solid var(--line);
+ border-radius:28px;
+ padding:30px;
+ box-shadow:var(--shadow);
+}
+
+.form-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:12px;
+}
+
+.field{
+ display:flex;
+ flex-direction:column;
+ gap:6px;
+}
+
+.field.full{
+ grid-column:1/-1;
+}
+
+label{
+ font-size:12px;
+ color:var(--muted);
+ font-weight:700;
+}
+
+input,
+select,
+textarea{
+ border:1px solid var(--line);
+ border-radius:12px;
+ padding:12px;
+ background:#fffdf9;
+ outline:none;
+ color:var(--ink);
+ font-family:"Cairo",sans-serif;
+ font-size:14px;
+}
+
+textarea{
+ min-height:100px;
+ resize:vertical;
+}
+
+.notice{
+ font-size:12px;
+ color:#8b8b82;
+ margin-top:12px;
+ line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+ background:#505747;
+ color:#eef0e8;
+ padding:27px 0;
+ font-size:13px;
+}
+
+.footer-inner{
+ display:flex;
+ justify-content:space-between;
+ gap:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+ .navlinks{
+  display:none;
+ }
+
+ .menu-btn{
+  display:block;
+ }
+
+ .hero-grid,
+ .ready,
+ .location,
+ .order-grid{
+  grid-template-columns:1fr;
+ }
+
+ .hero{
+  padding:60px 0;
+ }
+
+ .hero-grid{
+  min-height:auto;
+ }
+
+ .hero-photo{
+  height:380px;
+ }
+
+ .flower-grid{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .collection-grid{
+  grid-template-columns:1fr;
+ }
+
+}
+
+@media(max-width:560px){
+
+ h1{
+  font-size:46px;
+ }
+
+ .section{
+  padding:65px 0;
+ }
+
+ .flower-grid{
+  grid-template-columns:1fr;
+ }
+
+ .price-cards{
+  grid-template-columns:1fr;
+ }
+
+ .form-grid{
+  grid-template-columns:1fr;
+ }
+
+ .field.full{
+  grid-column:auto;
+ }
+
+ .topbar .container{
+  justify-content:center;
+  text-align:center;
+ }
+
+ .topbar span:last-child{
+  display:none;
+ }
+
+ .footer-inner{
+  flex-direction:column;
+  text-align:center;
+ }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+<div class="container">
+
+<span>
+🌿 ورود طازة • تغليف أنيق • لحظات مميزة
+</span>
+
+<span>
+📍 بجانب المستشفى · بنها
+</span>
+
+</div>
+</div>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="container nav-inner">
+
+<a class="logo" href="#">
+رومز
+<span>ROMZ FLOWERS</span>
+</a>
+
+<div class="navlinks">
+
+<a href="#flowers">الورود</a>
+
+<a href="#collections">
+التشكيلات
+</a>
+
+<a href="#ready">
+جاهز للاستلام
+</a>
+
+<a href="#location">
+موقعنا
+</a>
+
+<a href="#order">
+اطلب الآن
+</a>
+
+</div>
+
+<a class="cart-btn" href="#order">
+اطلب الآن
+</a>
+
+<button
+class="menu-btn"
+onclick="alert('استخدم الأقسام بالأسفل لتصفح رومز فلاورز.')">
+
+☰
+
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div class="hero-copy">
+
+<div class="kicker">
+رومز فلاورز · بنها
+</div>
+
+<h1>
+ورد يعبّر<br>
+عنك بجمال
+</h1>
+
+<p>
+أكتر من مجرد ورد — إحساس، ورسالة، ولحظة مميزة.
+اكتشف أجمل الورد الطبيعي من رومانسي، توليب، زنبق،
+عروسة النيل، وباقات مشكلة لكل مناسبة.
+</p>
+
+<div class="script">
+ورد طازة لأيام أجمل
+</div>
+
+<div class="actions">
+
+<a class="btn primary" href="#flowers">
+تصفح الورود
+</a>
+
+<a class="btn secondary" href="#location">
+اعرف مكان المحل
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-photo">
+
+<img
+src="assets/romz-banner.png"
+alt="رومز فلاورز">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FLOWERS -->
+
+<section class="section" id="flowers">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="kicker">
+طازة وجميلة
+</div>
+
+<h2>
+تشكيلة الورود
+</h2>
+
+<p>
+مجموعة من أشهر الورود المتوفرة في رومز.
+الأسعار تقريبية وممكن تختلف حسب الحجم
+والموسم وطريقة التنسيق.
+</p>
+
+</div>
+
+
+<div class="flower-grid">
+
+
+<!-- ROSES -->
+
+<article class="product">
+
+<div class="product-img">
+🌹
+</div>
+
+<div class="product-body">
+
+<h3>
+ورد جوري
+</h3>
+
+<p>
+كلاسيكي ورومانسي، مثالي للباقات
+والهدايا المميزة.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٢٥٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('ورد جوري')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- TULIPS -->
+
+<article class="product">
+
+<div class="product-img">
+🌷
+</div>
+
+<div class="product-body">
+
+<h3>
+توليب
+</h3>
+
+<p>
+ألوان ناعمة ومبهجة لتنسيقات
+أنيقة ومفرحة.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٣٥٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('توليب')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- BABY BREATH -->
+
+<article class="product">
+
+<div class="product-img">
+🌸
+</div>
+
+<div class="product-body">
+
+<h3>
+عروسة النيل
+</h3>
+
+<p>
+زهور بيضاء رقيقة تضيف لمسة
+حالمة وناعمة.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ١٨٠ جنيه
+<small>/ حزمة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('عروسة النيل')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- LILIES -->
+
+<article class="product">
+
+<div class="product-img">
+🤍
+</div>
+
+<div class="product-body">
+
+<h3>
+زنبق
+</h3>
+
+<p>
+زهور أنيقة ولافتة بمظهر
+راقي ومنعش.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٤٠٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('زنبق')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- SUNFLOWERS -->
+
+<article class="product">
+
+<div class="product-img">
+🌻
+</div>
+
+<div class="product-body">
+
+<h3>
+عباد الشمس
+</h3>
+
+<p>
+ورود مبهجة ومشرقة لأعياد الميلاد
+واللحظات السعيدة.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٣٠٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('عباد الشمس')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- CHRYSANTHEMUMS -->
+
+<article class="product">
+
+<div class="product-img">
+🌺
+</div>
+
+<div class="product-body">
+
+<h3>
+أقحوان
+</h3>
+
+<p>
+زهور ممتلئة وملونة للتنسيقات
+المشكلة والموسمية.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٢٨٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('أقحوان')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- GREENERY -->
+
+<article class="product">
+
+<div class="product-img">
+🌿
+</div>
+
+<div class="product-body">
+
+<h3>
+ورق أخضر
+</h3>
+
+<p>
+أوراق وأعشاب طبيعية لإضافة
+لمسة عصرية وطبيعية.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ١٢٠ جنيه
+<small>/ إضافة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('ورق أخضر')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- MIXED -->
+
+<article class="product">
+
+<div class="product-img">
+💐
+</div>
+
+<div class="product-body">
+
+<h3>
+باقة مشكلة
+</h3>
+
+<p>
+تشكيلة مختارة من الورد الموسمي
+باختيار الفلوريست.
+</p>
+
+<div class="product-footer">
+
+<span class="price">
+يبدأ من ٤٥٠ جنيه
+<small>/ باقة</small>
+</span>
+
+<button
+class="add"
+onclick="choose('باقة مشكلة')">
+
+اختر
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COLLECTIONS -->
+
+<section class="section alt" id="collections">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="kicker">
+لكل مناسبة
+</div>
+
+<h2>
+تشكيلاتنا الخاصة
+</h2>
+
+<p>
+اختار حسب المناسبة، وسيب باقي التفاصيل على رومز.
+</p>
+
+</div>
+
+
+<div class="collection-grid">
+
+
+<div class="collection">
+
+<h3>
+سلامتك
+</h3>
+
+<p>
+باقات مريحة ومناسبة لزيارات
+المستشفى والتمنيات الطيبة.
+</p>
+
+<div class="emoji">
+🌷
+</div>
+
+</div>
+
+
+<div class="collection">
+
+<h3>
+مولود جديد
+</h3>
+
+<p>
+تنسيقات ناعمة ومبهجة بألوان
+هادئة لاستقبال المولود.
+</p>
+
+<div class="emoji">
+👶🏻
+</div>
+
+</div>
+
+
+<div class="collection">
+
+<h3>
+رومانسي
+</h3>
+
+<p>
+ورد جوري وبوكسات هدايا وتفاصيل
+خاصة لشخص عزيز عليك.
+</p>
+
+<div class="emoji">
+❤️
+</div>
+
+</div>
+
+
+<div class="collection">
+
+<h3>
+عيد ميلاد
+</h3>
+
+<p>
+ورد + كارت + إضافات هدايا اختيارية
+عشان يوم مميز.
+</p>
+
+<div class="emoji">
+🎂
+</div>
+
+</div>
+
+
+<div class="collection">
+
+<h3>
+من غير مناسبة
+</h3>
+
+<p>
+مش لازم مناسبة. أحياناً أبسط
+لفتة بتعمل فرق كبير.
+</p>
+
+<div class="emoji">
+🤍
+</div>
+
+</div>
+
+
+<div class="collection">
+
+<h3>
+أنيق
+</h3>
+
+<p>
+باقات بسيطة وخالدة لمظهر
+راقي وهادئ.
+</p>
+
+<div class="emoji">
+🌿
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- READY TO GO -->
+
+<section class="section" id="ready">
+
+<div class="container ready">
+
+<div>
+
+<div class="kicker">
+اختيار سريع
+</div>
+
+<h2
+style="font-size:42px;color:var(--sage);margin:10px 0">
+
+باقات جاهزة للاستلام
+
+</h2>
+
+<p
+style="line-height:1.9;color:var(--muted)">
+
+مستعجل؟ اختار باقة جاهزة، ضيف كارت أو هدية،
+وامشي على طول. مناسبة جداً لزيارات المستشفى
+والمفاجآت في اللحظة الأخيرة.
+
+</p>
+
+<div class="addons">
+
+<b>
+الإضافات المتاحة:
+</b>
+
+كارت تهنئة · بوكس هدية · لعبة ·
+كيك وحلويات عند الطلب
+
+</div>
+
+</div>
+
+
+<div class="price-cards">
+
+
+<div class="price-card">
+
+<h3>
+صغيرة
+</h3>
+
+<strong>
+٣٥٠ جنيه+
+</strong>
+
+<span>
+باقة جاهزة
+</span>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>
+وسط
+</h3>
+
+<strong>
+٥٥٠ جنيه+
+</strong>
+
+<span>
+باقة جاهزة
+</span>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>
+كبيرة
+</h3>
+
+<strong>
+٧٥٠ جنيه+
+</strong>
+
+<span>
+باقة جاهزة
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="section alt" id="location">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="kicker">
+تعالوا زوروا
+</div>
+
+<h2>
+وين تلاقي رومز
+</h2>
+
+<p>
+موقعنا بجانب المستشفى في بنها — مناسب جداً
+لوقفة سريعة قبل الزيارة.
+</p>
+
+</div>
+
+
+<div class="location">
+
+
+<div class="map-card">
+
+<div>
+
+<div class="map-pin">
+📍
+</div>
+
+<h3>
+رومز فلاورز
+</h3>
+
+<p>
+بجانب المستشفى<br>
+بنها، مصر
+</p>
+
+<a
+class="btn primary"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=flower+shop+near+hospital+Benha+Egypt">
+
+افتح في خرائط جوجل
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="info-card">
+
+<h2>
+زور المحل
+</h2>
+
+
+<div class="info-row">
+
+<b>
+📍 الموقع
+</b>
+
+<span>
+بجانب المستشفى · بنها، مصر
+</span>
+
+</div>
+
+
+<div class="info-row">
+
+<b>
+🕘 مواعيد العمل
+</b>
+
+<span>
+يومياً · ١٠ صباحاً – ١٠ مساءً
+</span>
+
+</div>
+
+
+<div class="info-row">
+
+<b>
+💬 طلب سريع
+</b>
+
+<span>
+متاح الطلب عن طريق واتساب
+</span>
+
+</div>
+
+
+<div class="info-row">
+
+<b>
+🌸 خدماتنا
+</b>
+
+<span>
+كل أنواع الورد · باقات · هدايا ·
+تنسيقات مناسبات
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="section order" id="order">
+
+<div class="container order-grid">
+
+
+<div>
+
+<div class="kicker">
+اجعلها شخصية
+</div>
+
+<h2
+style="font-size:44px;color:var(--sage);margin:10px 0">
+
+اطلب باقتك
+
+</h2>
+
+<p
+style="line-height:1.85;color:var(--muted)">
+
+اختار الورد أو المناسبة وابعت بياناتك.
+الفورم بالأسفل بيجهز رسالة واتساب
+جاهزة لرومز.
+
+</p>
+
+<div class="script">
+الورد دايماً فكرة حلوة.
+</div>
+
+</div>
+
+
+<div class="order-box">
+
+<div class="form-grid">
+
+
+<div class="field">
+
+<label>
+الاسم
+</label>
+
+<input
+id="name"
+placeholder="اكتب اسمك">
+
+</div>
+
+
+<div class="field">
+
+<label>
+رقم الموبايل
+</label>
+
+<input
+id="phone"
+placeholder="01xxxxxxxxx">
+
+</div>
+
+
+<div class="field">
+
+<label>
+نوع الورد / الباقة
+</label>
+
+<select id="flower">
+
+<option>
+باقة مشكلة
+</option>
+
+<option>
+ورد جوري
+</option>
+
+<option>
+توليب
+</option>
+
+<option>
+عروسة النيل
+</option>
+
+<option>
+زنبق
+</option>
+
+<option>
+عباد الشمس
+</option>
+
+<option>
+أقحوان
+</option>
+
+<option>
+ورق أخضر
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+الحجم
+</label>
+
+<select id="size">
+
+<option>
+صغيرة
+</option>
+
+<option>
+وسط
+</option>
+
+<option>
+كبيرة
+</option>
+
+<option>
+حسب الطلب
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label>
+رسالة الكارت
+</label>
+
+<textarea
+id="message"
+placeholder="اكتب رسالتك هنا...">
+</textarea>
+
+</div>
+
+
+<div class="field full">
+
+<button
+class="btn primary"
+style="border:0;width:100%"
+onclick="sendOrder()">
+
+ابعت الطلب على واتساب
+
+</button>
+
+</div>
+
+
+</div>
+
+
+<div class="notice">
+
+رقم تجريبي: ‎+20 1XX XXX XXXX‏ —
+غيّره برقم واتساب رومز الحقيقي قبل نشر الموقع.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-inner">
+
+<span>
+© ٢٠٢٦ رومز فلاورز
+</span>
+
+<span>
+ورد يعبّر عنك بجمال · بنها، مصر
+</span>
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* اختيار الورد والانتقال لقسم الطلب */
+
+function choose(item){
+
+ document.getElementById("flower").value = item;
+
+ document
+ .getElementById("order")
+ .scrollIntoView({
+  behavior:"smooth"
+ });
+
+}
+
+
+/* إرسال الطلب عبر واتساب */
+
+function sendOrder(){
+
+ const name =
+ document.getElementById("name").value ||
+ "عميل";
+
+ const phone =
+ document.getElementById("phone").value ||
+ "غير متوفر";
+
+ const flower =
+ document.getElementById("flower").value;
+
+ const size =
+ document.getElementById("size").value;
+
+ const message =
+ document.getElementById("message").value ||
+ "بدون رسالة كارت";
+
+
+ const text =
+ `أهلاً رومز فلاورز 🌷
+
+الاسم: ${name}
+
+رقم الموبايل: ${phone}
+
+نوع الورد/الباقة: ${flower}
+
+الحجم: ${size}
+
+رسالة الكارت: ${message}
+
+عايز أعرف السعر النهائي والتوفر.`;
+
+
+ /*
+  غيّر هذا الرقم
+  برقم واتساب رومز الحقيقي.
+
+  مثال:
+  201012345678
+ */
+
+ const whatsappNumber =
+ "201000000000";
+
+
+ const url =
+ `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+
+ window.open(
+  url,
+  "_blank"
+ );
+
+}
+
+</script>
+
+</body>
+</html>
